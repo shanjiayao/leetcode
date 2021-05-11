@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="75-sortcolors.html" />
+    
     
     <link rel="prev" href="02-addtwonum.html" />
     
@@ -166,6 +168,19 @@
             
         </li>
     
+        <li class="chapter " data-level="3.4" data-path="75-sortcolors.html">
+            
+                <a href="75-sortcolors.html">
+            
+                    
+                    75-SortColor
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -260,11 +275,13 @@
 <p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;&#x6700;&#x597D;&#x60C5;&#x51B5;&#x4E0B;O(1)&#xFF0C;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x4E0B;O(n)</p>
 <p>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(1)</p>
 <h5 id="2-&#x8F6C;&#x6362;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x518D;&#x52A0;&#x4E00;">2. &#x8F6C;&#x6362;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x518D;&#x52A0;&#x4E00;</h5>
-<p>&#x5C06;&#x5217;&#x8868;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7136;&#x540E;&#x518D;&#x8F6C;&#x6362;&#x6210;&#x6574;&#x6570;&#xFF0C;&#x52A0;&#x4E00;&#x4E4B;&#x540E;&#x518D;&#x53D8;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FDB;&#x800C;&#x8F6C;&#x6362;&#x4E3A;&#x5217;&#x8868;</p>
+<p>&#x8FD9;&#x79CD;&#x601D;&#x8DEF;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x76F4;&#x63A5;&#x5C06;&#x5217;&#x8868;&#x8F6C;&#x6362;&#x4E3A;&#x6570;&#x5B57;&#xFF08;list -&gt; int -&gt; +1 -&gt; list&#xFF09;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x662F;&#x901A;&#x8FC7;&#x5B57;&#x7B26;&#x521B;&#x8F6C;&#x6362;&#xFF08;list -&gt; str -&gt; int -&gt; str -&gt; list&#xFF09;</p>
 <ul>
-<li>&#x6CE8;&#x610F;&#x4F7F;&#x7528;map&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5C06;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x5E94;&#x7C7B;&#x578B;</li>
-<li>&#x6CE8;&#x610F;&#x8F93;&#x5165;&#x5982;&#x679C;&#x662F;[0, 0]&#xFF0C;&#x90A3;&#x4E48;&#x8F93;&#x51FA;&#x5E94;&#x8BE5;&#x662F;[0, 1]&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x52A0;&#x4E86;&#x4E2A;while&#x8865;&#x5168;0&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x81EA;&#x5E26;&#x7684;<code>zfill</code>&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8865;0&#x5230;&#x6307;&#x5B9A;&#x957F;&#x5EA6;</li>
-</ul>
+<li><p>&#x5C06;&#x5217;&#x8868;&#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7136;&#x540E;&#x518D;&#x8F6C;&#x6362;&#x6210;&#x6574;&#x6570;&#xFF0C;&#x52A0;&#x4E00;&#x4E4B;&#x540E;&#x518D;&#x53D8;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FDB;&#x800C;&#x8F6C;&#x6362;&#x4E3A;&#x5217;&#x8868;</p>
+<ul>
+<li><p>&#x6CE8;&#x610F;&#x4F7F;&#x7528;map&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5C06;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8F6C;&#x6362;&#x6210;&#x5BF9;&#x5E94;&#x7C7B;&#x578B;</p>
+</li>
+<li><p>&#x6CE8;&#x610F;&#x8F93;&#x5165;&#x5982;&#x679C;&#x662F;[0, 0]&#xFF0C;&#x90A3;&#x4E48;&#x8F93;&#x51FA;&#x5E94;&#x8BE5;&#x662F;[0, 1]&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x52A0;&#x4E86;&#x4E2A;while&#x8865;&#x5168;0&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x81EA;&#x5E26;&#x7684;<code>zfill</code>&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8865;0&#x5230;&#x6307;&#x5B9A;&#x957F;&#x5EA6;</p>
 <pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">plusOne</span><span class="hljs-params">(self, digits: List[int])</span> -&gt; List[int]:</span>
         digits_ = map(str, digits)
@@ -279,6 +296,28 @@
 </code></pre>
 <p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(n)</p>
 <p>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(n)</p>
+</li>
+</ul>
+</li>
+<li><p>&#x5C06;&#x5217;&#x8868;&#x76F4;&#x63A5;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">plusOne</span><span class="hljs-params">(self, digits: List[int])</span> -&gt; List[int]:</span>
+        length = len(digits)
+        digits_int = <span class="hljs-number">0</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> digits:
+            length -= <span class="hljs-number">1</span>
+            digits_int += i * <span class="hljs-number">10</span> ** length    
+        digits_str = str(digits_int + <span class="hljs-number">1</span>)
+        <span class="hljs-keyword">if</span> len(digits_str) &gt;= len(digits):
+            <span class="hljs-keyword">return</span> [int(x) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> digits_str]
+        <span class="hljs-keyword">else</span>:
+            ret_list = [<span class="hljs-number">0</span> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(digits) - len(digits_str))]
+            print(ret_list)
+            ret_list += [int(x) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> digits_str]
+            <span class="hljs-keyword">return</span> ret_list
+</code></pre>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -306,10 +345,14 @@
 
             
                 
-                <a href="02-addtwonum.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 02-AddTwoNum">
+                <a href="02-addtwonum.html" class="navigation navigation-prev " aria-label="Previous page: 02-AddTwoNum">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="75-sortcolors.html" class="navigation navigation-next " aria-label="Next page: 75-SortColor">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -318,7 +361,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"66-PlusOne","level":"3.3","depth":1,"previous":{"title":"02-AddTwoNum","level":"3.2","depth":1,"path":"02-addtwonum.md","ref":"02-addtwonum.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"66-plusone.md","mtime":"2021-02-05T17:01:04.279Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-05T17:03:01.077Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"66-PlusOne","level":"3.3","depth":1,"next":{"title":"75-SortColor","level":"3.4","depth":1,"path":"75-sortcolors.md","ref":"75-sortcolors.md","articles":[]},"previous":{"title":"02-AddTwoNum","level":"3.2","depth":1,"path":"02-addtwonum.md","ref":"02-addtwonum.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"66-plusone.md","mtime":"2021-02-06T06:00:14.064Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-07T15:51:27.106Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
